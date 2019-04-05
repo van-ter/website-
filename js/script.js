@@ -1,5 +1,15 @@
 $(document).ready(function() {
+  $('.item').magnificPopup({
+    type: 'ajax',
+    ajax: {
+      settings: null,
+      cursor: 'ajax-loading',
+      tError: '<a href="%url%">The content</a> could not be loaded.'
+    }
+  });
+
   $('.sandwich').click(function(){
+    $(this).toggleClass('close');
     $('nav').toggleClass('adaptive');
   });
 
@@ -16,11 +26,6 @@ $(document).ready(function() {
       $(".i-search").addClass('search-false')
       $(".i-search").parent('.wrapper-search').removeClass('show-search')
     }
-    // var div2 = $("nav"); 
-    // if (!div2.is(e.target) && (div2.hasClass('adaptive')) && div2.has(e.target).length === 0) { 
-    //   $('nav').toggleClass('adaptive');
-    //   $('.sandwich').toggleClass('close');
-    // }
   });
   var $headerH = $('header').height();
   $('header').css('height', $headerH);
@@ -28,24 +33,10 @@ $(document).ready(function() {
   $(window).on('scroll load', function () {
     if ($(document).scrollTop() > 5) {
       $(".main-header").addClass("fixed");
-      $('.home-top').addClass('scrol');
-      $('.baner .btn').addClass('btn-red');
+      $('.baner .block-red').addClass('red-liner');
     } else {
       $(".main-header").removeClass("fixed");
-      $('.home-top').removeClass('scrol');
-      $('.baner .btn').removeClass('btn-red')
+      $('.baner .block-red').removeClass('red-liner')
     }
-  });
-
-  $('#form').magnificPopup({
-    type: 'inline',
-    preloader: false
-  });
-
-  $('#designe').load('https://tos.in.ua/form-blade.html');
-
-  $('.sandwich').click(function(){
-    $(this).toggleClass('close');
-    $(this).closest('nav').toggleClass('adaptive');
   });
 });

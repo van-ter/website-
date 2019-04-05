@@ -13,7 +13,7 @@ body {
 	font-size: 14px;
 	line-height: 18px;
 	color: #000;
-	font-family: 'Montserrat', sans-serif;
+	font-family: $font2;
 	min-width: 320px;
 }
 
@@ -30,7 +30,7 @@ b, strong {
 	font-weight: 700;
 }
 i{
-	font-family: 'Playfair Display', serif;
+	font-family: $font1;
 }
 
 h1,
@@ -40,7 +40,14 @@ h4,
 h5,
 h6 {
 	color: #fff;
-	text-transform: uppercase;
+	font-family: $font1;
+}
+
+h1 {
+	font-size: 140px;
+	padding: 15px 0px;
+	text-align: center;
+	line-height: 180px;
 }
 
 //Grid

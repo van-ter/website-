@@ -2,7 +2,7 @@
     .main-header {
         padding: 50px 100px;
     }
-    .title-page {
+    h1 {
         font-size: 120px;
         line-height: 160px;
     }
@@ -17,7 +17,7 @@
     .main-header{
         padding: 40px 100px;
     }
-    .title-page {
+    h1 {
         font-size: 120px;
         line-height: 160px;
     }
@@ -29,7 +29,10 @@
     }
 }
 @media screen and (max-width: 1100px)  {
-    .title-page {
+    .wrapper-search.show-search input {
+        width: 200px;
+    }
+    h1 {
         font-size: 120px;
         line-height: 160px;
     }
@@ -48,8 +51,16 @@
         line-height: 60px;
     }
 }
-@media screen and (max-width: 960px)  {
-    
+@media screen and (max-width: 980px)  {
+    .main-header.fixed{
+        padding: 20px 50px;
+    }
+    .main-header {
+        padding: 40px 50px;
+    }
+    .container {
+        padding: 0 50px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -154,7 +165,7 @@
         padding: 20px 20px;
     }
     .baner{
-        .btn-red{
+        .red-liner{
             &::after {
                 width: 50px;
             }
@@ -174,13 +185,13 @@
             line-height: 24px;
             margin-bottom: 30px;
         }
-        .title-page {
+        h1 {
             font-size: 64px;
             line-height: 80px;
             
         }
     }
-    .home-top::after {
+    .home-top .play {
         width: 54px;
         height: 54px;
         background-size: contain;
@@ -208,7 +219,7 @@
 @media screen and (max-width: 400px) {
     
     .baner {
-        .title-page {
+        h1 {
             font-size: 52px;
             line-height: 66px;
         }

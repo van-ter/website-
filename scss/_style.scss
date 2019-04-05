@@ -1,8 +1,25 @@
+body.ajax-loading::after {
+    content: 'loading...';
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+    z-index: 12345;
+    top: 0;
+	left: 0;
+	font-family: $font1;
+	font-size: 40px;
+}
+
 section {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
+} 
 
 .home-top {
 	background-image: url('../images/home-bg.jpg');
@@ -21,8 +38,7 @@ section {
 	.container{
 		height: 100%;
 	}
-	&::after{
-		content: '';
+	.play{
 		display: inline-block;
 		width: 84px;
 		height: 84px;
@@ -33,6 +49,9 @@ section {
 		bottom: 42px;
 		transform: rotate(0deg);
 		transition: all .3s linear;
+		&:hover{
+			transform: rotate(90deg);
+		}
 	}
 	
 }
@@ -133,13 +152,7 @@ section {
 		line-height: 34px;
 	}
 }
-.title-page{
-	font-size: 140px;
-	padding: 15px 0px;
-	text-align: center;
-	font-family: 'Playfair Display', serif;	
-	line-height: 180px;
-}
+
 .wrapper-block{
 	width: 100%;
     position: relative;
@@ -268,11 +281,6 @@ section {
 :-moz-placeholder {
 	color: #444;
 }
-.scrol::after{
-	transform: rotate(90deg);
-}
-
-
 .mfp-bg {
 	background-color: rgba(255, 255, 255, .7);
 }
@@ -283,7 +291,7 @@ section {
 	padding: 30px;
 	position: relative;
 
-	h1 {
+	h2 {
 		border-bottom: 1px solid rgba(255, 255, 255, .2);
 		line-height: 48px;
 		margin-bottom: 15px;
@@ -395,7 +403,15 @@ nav + span {
     align-items: center;
 }
 .baner{
-	.btn{
+	.block-red{
+		display: inline-block;
+		text-align: center;
+		padding: 15px 50px;
+		border-radius: 46px;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: #fff;
+		background-color: #da7074;
 		position: relative;
 	
 		&::after {
@@ -421,9 +437,7 @@ nav + span {
 			transition: all 1s linear;
 		}
 	}	
-	.btn-red{
-		position: relative;
-	
+	.red-liner {
 		&::after {
 			width: 200px;
 			transform: translateX(100%);
