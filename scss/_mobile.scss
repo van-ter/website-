@@ -1,0 +1,243 @@
+@media screen and (max-width: 1600px)  {
+    .main-header {
+        padding: 50px 100px;
+    }
+    .title-page {
+        font-size: 120px;
+        line-height: 160px;
+    }
+    .baner {
+        p {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+}
+@media screen and (max-width: 1300px)  {
+    .main-header{
+        padding: 40px 100px;
+    }
+    .title-page {
+        font-size: 120px;
+        line-height: 160px;
+    }
+    .baner {
+        width: 80%;
+    }
+    .row-footer{
+        padding: 100px 0px 120px;
+    }
+}
+@media screen and (max-width: 1100px)  {
+    .title-page {
+        font-size: 120px;
+        line-height: 160px;
+    }
+    .baner {
+        width: 90%;
+    }
+    .wrapper-block .item .info{
+        bottom: 50px;
+        font-size: 14px;
+    }
+    .row-footer {
+        padding: 60px 0px;
+    }
+    .footer-bottom{
+        height: 60px;
+        line-height: 60px;
+    }
+}
+@media screen and (max-width: 960px)  {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .sandwich{
+        display: flex;
+        transition: all .3s linear;
+        cursor: pointer;
+        span{
+            transition: all .3s linear;
+            position: relative;
+        }
+    }
+    .sandwich.close{
+        z-index: 123;
+    }
+    .sandwich.close span:nth-child(3) {
+        bottom: 7px;
+        transform: rotate(45deg);
+    }
+    .sandwich.close span:nth-child(1) {
+        top: 7px;
+        transform: rotate(-45deg);
+    }
+    .sandwich.close span:nth-child(2) {
+        width: 26px;
+        visibility: hidden;
+        transition: all 0s linear;
+    }
+
+    header nav{
+        position: fixed;
+        height: 100%;
+        right: -310px; 
+        width: 300px;
+        top: 0px;
+        background: rgba(0,0,0,.8);
+        border-left: 1px solid #8d8d8d;
+        padding: 90px 0 10px;
+        transition: all .3s linear;
+        z-index: 12;
+        .menu-top{
+            li{
+                display: flex;
+            }
+            a {
+                display: block;
+                width: 100%;
+                padding: 15px 40px;
+            }
+        }
+    }
+    header nav.adaptive{
+        right: 0px; 
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .main-header {
+        padding: 40px 20px;
+    }
+    
+    .wrapper-block {
+        width: 100%;
+        position: relative;
+        padding: 0;
+        font-size: 0px;
+        line-height: 0;
+
+        .item {
+            background-color: #000;
+            display: inline-block;
+            height: 50vw;
+            width: 50%;
+            top: auto;
+            left: auto;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                position: static; 
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .wrapper-block .item:nth-child(2),
+    .wrapper-block .item:nth-child(3),
+    .wrapper-block .item:nth-child(4) {
+        left: auto;
+    }
+    .row-footer {
+        display: block;
+        .col {
+            width: 33.33%;
+        }
+        .col:last-child{
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+    .main-header.fixed {
+        padding: 20px 20px;
+    }
+    .baner{
+        .btn-red{
+            &::after {
+                width: 50px;
+            }
+            &::before {
+                width: 50px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .baner {
+        width: 100%;
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+        .title-page {
+            font-size: 64px;
+            line-height: 80px;
+            
+        }
+    }
+    .home-top::after {
+        width: 54px;
+        height: 54px;
+        background-size: contain;
+        background-image: url(../images/icons/play-btn.png);
+        left: calc(50% - 27px);
+        bottom: 30px;
+    }
+    .row-footer .col .title-col{
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .main-header {
+        padding: 20px 20px;
+    }
+    .main-header.fixed {
+        padding: 10px 20px;
+    }
+    .popup-designe {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 15px;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    
+    .baner {
+        .title-page {
+            font-size: 52px;
+            line-height: 66px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .wrapper-block {
+        .item {
+            height: 100vw;
+            width: 100%;
+            .info {
+                bottom: 45%;
+                font-size: 18px;
+            }
+        }
+        
+    }
+    .row-footer .col{
+        text-align: center;
+        .title-col {
+            margin-bottom: 0px;
+            font-size: 11px;
+            line-height: 18px;
+            min-height: 35px;
+        }
+    }
+    .wrapper-search.show-search input {
+        width: 198px;
+    }
+}

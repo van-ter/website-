@@ -1,0 +1,151 @@
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('../fonts/Georgia-Italic.eot');
+	src: local('Georgia Italic'), local('Georgia-Italic'),
+		url('../fonts/Georgia-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Georgia-Italic.woff') format('woff'),
+		url('../fonts/Georgia-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+body {
+	font-size: 14px;
+	line-height: 18px;
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+	min-width: 320px;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	font-size: 14px;
+	line-height: 26px;
+}
+
+b, strong {
+	font-weight: 700;
+}
+i{
+	font-family: 'Playfair Display', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+//Grid
+//-------------------------------------------------------------------------------------
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 100px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+}
+
+// .col-12 {
+//  	width: 940px;
+// }
+
+// .col-11 {
+//  	width: 860px;
+// }
+
+// .col-10 {
+//  	width: 780px;
+// }
+
+// .col-9 {
+//  	width: 700px;
+// }
+
+// .col-8 {
+//  	width: 620px;
+// }
+
+// .col-7 {
+//  	width: 540px;
+// }
+
+// .col-6 {
+//  	width: 460px;
+// }
+
+// .col-5 {
+//  	width: 380px;
+// }
+
+// .col-4 {
+//  	width: 300px;
+// }
+
+// .col-3 {
+//  	width: 220px;
+// }
+
+// .col-2 {
+//  	width: 140px;
+// }
+
+// .col-1 {
+//  	width: 60px;
+// }
+
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	padding: 15px 50px;
+	border-radius: 46px;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #fff;
+	background-color: #da7074;
+}
+
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.row-center {
+	justify-content: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.container-flex {
+	height: 100%;
+}
+
+.hidden {
+	overflow: hidden;
+}
