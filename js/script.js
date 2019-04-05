@@ -42,7 +42,7 @@ $(document).ready(function() {
     preloader: false
   });
 
-  $('#designe').load('https://van-ter.github.io/website-/form-blade.html');
+  $('#designe').load('https://tos.in.ua/form-blade.html');
 
   $('.sandwich').click(function(){
     $(this).toggleClass('close');
